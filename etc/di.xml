@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Wishlist\Model\Wishlist">
+        <plugin name="add_grouped_product_from_associated_simple" type="MageSuite\WishlistGroupedProducts\Plugin\Wishlist\Model\Wishlist\AddGroupedProductFromAssociatedSimple" sortOrder="10" />
+    </type>
+
+    <type name="Magento\Wishlist\Block\Cart\Item\Renderer\Actions\MoveToWishlist">
+        <plugin name="change_product_visibility_for_grouped_products" type="MageSuite\WishlistGroupedProducts\Plugin\Wishlist\Block\Cart\Item\Renderer\Actions\MoveToWishlist\ChangeProductVisibility" sortOrder="10" />
+    </type>
+</config>
